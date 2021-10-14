@@ -4,7 +4,8 @@
             "name": "Mac",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/Learn/common/**"
+                "${workspaceFolder}/Learn/**",
+                "${workspaceFolder}/Learn/common"
             ],
             "defines": [],
             "macFrameworkPath": [
