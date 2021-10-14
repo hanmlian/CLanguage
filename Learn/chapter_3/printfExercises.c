@@ -1,4 +1,4 @@
-#include "common.h"
+#include "../common/common.h"
 
 int main() {
     int a;
@@ -6,8 +6,6 @@ int main() {
     printf("0");
     dec_to_x(a, 8);
     printf("\n");
-
-
     dec_to_x(a, 10);
     printf("\n");
     printf("0x");
@@ -15,4 +13,3 @@ int main() {
     printf("\n");
     return 0;
 }
-
