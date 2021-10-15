@@ -1,3 +1,11 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: hanmlian
+ * @Date: 2021-10-13 11:31:25
+ * @LastEditors: hanmlian
+ * @LastEditTime: 2021-10-15 11:36:12
+ */
 #include "common.h"
 
 char ch[] = {'0', '1', '2', '3', '4', '5', '6', '7',
@@ -21,4 +29,8 @@ int gcd(int a, int b) {
 
 int lcm(int a, int b) {
     return a * b / gcd(a, b);
+}
+
+int max(int a, int b) {
+    return a > b ? a : b;
 }
