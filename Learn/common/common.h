@@ -4,7 +4,7 @@
  * @Author: hanmlian
  * @Date: 2021-10-13 11:34:10
  * @LastEditors: hanmlian
- * @LastEditTime: 2021-10-15 11:28:49
+ * @LastEditTime: 2021-10-15 14:29:24
  */
 #ifndef COMMON_H_
 #define COMMON_H_
@@ -24,12 +24,7 @@ extern int gcd(int, int);
  */
 extern int lcm(int, int);
 
-/**
- * @name: max
- * @msg: 求a,b的最大值
- * @param {int} a
- * @param {int} b
- * @return {int} 返回最大值
- */
-extern int max(int a, int b);
+extern int max(int , int);
+
+extern void eratosthenesSieve(int, int*);
 #endif
