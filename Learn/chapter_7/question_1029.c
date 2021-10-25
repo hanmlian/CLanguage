@@ -1,10 +1,11 @@
 /*
  * @Descripttion:
+    写一个判断素数的函数，在主函数输入一个整数，输出是否是素数的消息。
  * @version: 1.0
  * @Author: hanmlian
  * @Date: 2021-10-22 16:44:47
  * @LastEditors: hanmlian
- * @LastEditTime: 2021-10-22 17:03:08
+ * @LastEditTime: 2021-10-25 09:28:46
  */
 #include <stdio.h>
 

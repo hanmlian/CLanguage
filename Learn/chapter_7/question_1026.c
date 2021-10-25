@@ -1,10 +1,10 @@
 /*
- * @Descripttion:
+ * @Descripttion:输入10个数字，然后逆序输出。
  * @version: 1.0
  * @Author: hanmlian
  * @Date: 2021-10-22 16:30:57
  * @LastEditors: hanmlian
- * @LastEditTime: 2021-10-22 16:35:46
+ * @LastEditTime: 2021-10-25 09:28:00
  */
 #include <stdio.h>
 int main() {
