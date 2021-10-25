@@ -1,10 +1,10 @@
 /*
- * @Descripttion: 
- * @version: 
+ * @Descripttion:
+ * @version:
  * @Author: hanmlian
  * @Date: 2021-10-13 11:31:25
  * @LastEditors: hanmlian
- * @LastEditTime: 2021-10-15 14:28:27
+ * @LastEditTime: 2021-10-25 16:24:19
  */
 #include "common.h"
 
@@ -60,4 +60,26 @@ void eratosthenesSieve(int n, int* visit) {
             }
         }
     }
+}
+
+/**
+ * @name: getNumberFactor
+ * @msg: 获取一个整数的所有因子
+ * @param {int} n   整数
+ * @param {int} res 保存所有因子的数组
+ * @return {int} count 返回数组的长度
+ */
+int getNumberFactors(int n, int *res) {
+    int count = 0, tmp;
+    res[count++] = 1;
+    for (int i = 2; i * i <= n; i++) {
+        if (n % i == 0) {
+            res[count++] = i;
+            tmp= n / i;
+            if(tmp <= n && tmp != i) {
+                res[count++] = tmp;
+            }
+        }
+    }
+    return count;
 }
