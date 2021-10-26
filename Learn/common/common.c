@@ -4,7 +4,7 @@
  * @Author: hanmlian
  * @Date: 2021-10-13 11:31:25
  * @LastEditors: hanmlian
- * @LastEditTime: 2021-10-26 10:09:21
+ * @LastEditTime: 2021-10-26 15:41:39
  */
 #include "common.h"
 
@@ -51,7 +51,7 @@ int max(int a, int b) {
  */
 void eratosthenesSieve(int n, int* visit) {
     visit[0] = visit[1] = 1;  // 0,1特判
-    for (int i = 2; i * i < n; ++i) {
+    for (int i = 2; i * i <= n; ++i) {
         // i是质数
         if (!visit[i]) {
             //划掉他的倍数
