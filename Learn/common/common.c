@@ -4,7 +4,7 @@
  * @Author: hanmlian
  * @Date: 2021-10-13 11:31:25
  * @LastEditors: hanmlian
- * @LastEditTime: 2021-10-25 16:24:19
+ * @LastEditTime: 2021-10-26 10:09:21
  */
 #include "common.h"
 
@@ -69,17 +69,57 @@ void eratosthenesSieve(int n, int* visit) {
  * @param {int} res 保存所有因子的数组
  * @return {int} count 返回数组的长度
  */
-int getNumberFactors(int n, int *res) {
+int getNumberFactors(int n, int* res) {
     int count = 0, tmp;
     res[count++] = 1;
     for (int i = 2; i * i <= n; i++) {
         if (n % i == 0) {
             res[count++] = i;
-            tmp= n / i;
-            if(tmp <= n && tmp != i) {
+            tmp = n / i;
+            if (tmp <= n && tmp != i) {
                 res[count++] = tmp;
             }
         }
     }
     return count;
+}
+
+/**
+ * @name: swapNumber
+ * @msg: 交换两个整数的值
+ * @param {int*} a
+ * @param {int*} b
+ * @return {void}
+ */
+void swapNumber(int* a, int* b) {
+    int buf = *a;
+    *a = *b;
+    *b = buf;
+}
+
+/**
+ * @name: sort
+ * @msg: 对指定长度数组排序
+ * @param {int} array
+ * @param {int} length
+ * @param {int} 0表示从小到大，非0表示从大到小
+ * @return {int} 成功或失败
+ */
+int bubbbleSort(int array[], int length, int compare) {
+    int buf;
+    for (int i = 0; i < length; i++) {
+        for (int j = 0; j < length - i - 1; j++) {
+            if (compare) {
+                if (array[j] < array[j + 1]) {
+                    swapNumber(&array[j], &array[j + 1]);
+                }
+            } else {
+                if (array[j] > array[j + 1]) {
+                    swapNumber(&array[j], &array[j + 1]);
+                }
+            }
+        }
+    }
+
+    return 0;
 }
