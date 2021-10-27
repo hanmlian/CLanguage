@@ -4,7 +4,7 @@
  * @Author: hanmlian
  * @Date: 2021-10-13 11:31:25
  * @LastEditors: hanmlian
- * @LastEditTime: 2021-10-26 15:41:39
+ * @LastEditTime: 2021-10-27 10:42:28
  */
 #include "common.h"
 
@@ -122,4 +122,13 @@ int bubbbleSort(int array[], int length, int compare) {
     }
 
     return 0;
+}
+
+int breakNumber(int n, int numbers[]) {
+    int count = 0;
+    while (n != 0) {
+        numbers[count++] = n % 10;
+        n /= 10;
+    }
+    return count;
 }

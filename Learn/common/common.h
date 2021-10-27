@@ -1,10 +1,10 @@
 /*
- * @Descripttion: 
- * @version: 
+ * @Descripttion:
+ * @version:
  * @Author: hanmlian
  * @Date: 2021-10-13 11:34:10
  * @LastEditors: hanmlian
- * @LastEditTime: 2021-10-26 10:06:41
+ * @LastEditTime: 2021-10-27 10:40:00
  */
 #ifndef COMMON_H_
 #define COMMON_H_
@@ -25,7 +25,7 @@ extern int gcd(int, int);
  */
 extern int lcm(int, int);
 
-extern int max(int , int);
+extern int max(int, int);
 
 extern void eratosthenesSieve(int, int*);
 
@@ -34,4 +34,6 @@ extern int getNumberFactors(int n, int res[]);
 extern void swapNumber(int* a, int* b);
 
 extern int bubbbleSort(int array[], int length, int compare);
+
+extern int breakNumber(int n, int numbers[]);
 #endif
